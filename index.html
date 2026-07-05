@@ -1,1 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+<div class="container">
+    <h1>Health Tracker</h1>
+
+    <div class="card">
+        <h2>😴 Sleep (Hours)</h2>
+        <input type="number" id="sleepInput" placeholder="e.g. 8">
+        <button onclick="saveSleep()">Save</button>
+        <p>Today's Sleep: <span id="sleepDisplay">0</span> hrs</p>
+    </div>
+
+    <div class="card">
+        <h2>🍎 Calories</h2>
+        <input type="number" id="calorieInput" placeholder="Calories">
+        <button onclick="addCalories()">Add</button>
+        <p>Total Calories: <span id="calorieDisplay">0</span></p>
+    </div>
+
+    <div class="card">
+        <h2>💧 Water (mL)</h2>
+        <input type="number" id="waterInput" placeholder="250">
+        <button onclick="addWater()">Drink</button>
+        <p>Total Water: <span id="waterDisplay">0</span> mL</p>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
